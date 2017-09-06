@@ -36,7 +36,7 @@ ug_load_script("util/profiler_util.lua")
 
 -- Parse parameters and print help
 dim			= 3
-gridName	= util.GetParam("-grid", "box.ugx", "filename of underlying grid")
+gridName	= util.GetParam("-grid", "box-tet.ugx", "filename of underlying grid")
 numRefs		= util.GetParamNumber("-numRefs", 3, "number of refinements")
 writeSolution	= util.HasParamOption("-writeSolution", "If specified, the solution will be written to a file.")
 redistElemThreshold = util.GetParamNumber("-redistElemThreshold", 8, "Number of elements that each target process should receive")
